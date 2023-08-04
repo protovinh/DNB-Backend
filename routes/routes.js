@@ -9,7 +9,7 @@ router.get("/currencies", async (req, res) => {
       {
         headers: {
           "Content-type": "application/json",
-          "x-api-key": "344e09fefea74fe3af015544d50728e7",
+          "x-api-key": process.env.DNB_API_KEY,
         },
       }
     );
